@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #F5D04E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+    }
+
+    .wrapper {
+      height: 100dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .card {
+
+      border: 1px solid black;
+      border-radius: 15px;
+
+      align-items: center;
+      padding: 20px;
+      width: 250px;
+      background-color: #fff;
+      height: 400px;
+      box-shadow: 5px 5px 1px 1px black;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .yellow {
+      background-color: #F4D34A;
+      font-size: 0.8rem;
+      padding: 5px;
+      font-weight: bold;
+
+      text-align-last: left;
+    }
+
+    .margin {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .published {
+      font-size: 0.6rem;
+    }
+
+    .grayText {
+      font-size: 0.8rem;
+      color: #B5B5B5;
+    }
+
+
+    .mainPhoto {
+      width: 240px;
+
+      background-position: end;
+      background-image: url(/assets/images/illustration-article.svg);
+      overflow: hidden;
+
+    }
+
+    .img {
+
+
+      overflow: hidden;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .photo {
+      height: 1.6rem;
+      width: 1.6rem;
+
+    }
+
+
+
+    .attribution a {
+      top: auto;
+      bottom: 0;
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="img"><img class="mainPhoto" src="./assets/images/illustration-article.svg" alt=""></div>
+
+
+      <p class="margin"> <span class="yellow"> Learning</span></p>
+
+
+      <p class="published">Published 21 Dec 2023</p>
+
+      <h1>HTML & CSS foundations</h1>
+
+      <p class="grayText"> These languages are the backbone of every website, defining structure, content, and
+        presentation.</p>
+
+      <img class="photo" src="./assets/images/image-avatar.webp" alt="">Greg Hooper
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+</body>
+
+</html>
